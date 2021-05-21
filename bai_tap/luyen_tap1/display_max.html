@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 4, 5, 2, 12, 15, 17, 99, 18, 123]
+    let max = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i]
+        }
+    }
+    document.write('pần tử lớn nhất trong mảng: = ' + max)
+</script>
+</body>
+</html>

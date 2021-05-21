@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>E-V Dictionary</h2>
+<input id="input" type="text">
+<button onclick="translateWord()">Translate</button>
+</body>
+<script>
+    let english = ["coconut", "lime", "lychee", "pineapple", "papaya", "pear", "peach", "strawberry",'one']
+    let vietnamese = ["dừa", "chanh xanh", "vải", "dứa", "đu đủ", "lê", "đào", "dâu",'một']
+    let check = false
+
+    function translateWord() {
+        let trans = document.getElementById("input").value
+        let i
+        for (i = 0; i < english.length; i++) {
+            if (trans === english[i]) {
+                check = true;
+                break;
+            }
+        }
+        if (check) {
+            alert(vietnamese[i])
+        } else {
+            alert("Not Found")
+        }
+    }
+
+
+</script>
+</html>

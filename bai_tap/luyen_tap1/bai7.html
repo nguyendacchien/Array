@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n = +prompt("Input the number element ")
+  let numbers = new Array()
+  let index = 0
+  for (let i = 0; i < n; i++) {
+    numbers.push(+prompt("Input number"))
+  }
+  alert("The initial array is " + numbers.join(" "))
+  let m = +prompt("Input M ")
+  while (index < numbers.length) {
+    if (m === numbers[index]) {
+      numbers.splice(index, 1);
+      index = 0;
+      continue;
+    }
+    index++;
+  }
+  alert('The spliced array is ' + numbers.join(" "))
+</script>
+</body>
+</html>

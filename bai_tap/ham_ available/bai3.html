@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str = prompt("Input the string ")
+  let Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let Lower = "abcdefghijklmnopqrstuvwxyz"
+  let result = []
+
+  for (let i = 0; i < str.length; i++) {
+    if (Upper.indexOf(str[i]) !== -1) {
+      result.push(str[i].toLowerCase())
+    } else {
+      if (Lower.indexOf(str[i]) !== -1) {
+        result.push(str[i].toUpperCase())
+      } else {
+        result.push(str[i])
+      }
+    }
+  }
+  alert(result.join(""))
+</script>
+</body>
+</html>

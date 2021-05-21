@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let m = +prompt("Input The First Size ")
+  let n = +prompt("Input The Second Size ")
+  let numbers = new Array()
+  for (let i = 0; i < m; i++) {
+    numbers[i]=new Array()
+    for (let j = 0; j < n; j++) {
+      numbers[i][j] = +prompt("Input number")
+    }
+  }
+  for (let i in numbers) {
+    document.write("Row "+i+"<br>")
+    for (let j in numbers[i]) {
+      document.write(" "+numbers[i][j])
+    }
+    document.write("<br>")
+  }
+
+</script>
+</body>
+</html>

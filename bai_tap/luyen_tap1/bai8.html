@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Input the number element ")
+    let numbers = new Array()
+    for (let i = 0; i < n; i++) {
+        numbers.push(+prompt("Input number"))
+    }
+    alert("The initial array is " + numbers.join(" "))
+    numbers.sort(function (a, b) {
+        return a - b
+    })
+    alert("The sorted array is " + numbers.join(" "))
+</script>
+</body>
+</html>
